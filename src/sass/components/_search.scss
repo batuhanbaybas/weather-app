@@ -1,0 +1,44 @@
+@import '../utils/style';
+
+.search {
+  @include placement(0, auto, 0, auto);
+  @include padding(30px, 0, 0, 0);
+  @include flex(flex, center, center);
+
+  .input-container {
+    width: 50%;
+    border-radius: $border-radius-base;
+    @extend %box-shadow;
+    @include flex(flex, center, space-between);
+
+
+    .search-input {
+      flex: 0.9;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: $text-primary-color;
+      font-size: $font-size-base;
+      @include height(30px);
+      @include width(90%);
+      @include padding(10px, 20px, 10px, 20px);
+    }
+
+    .icon-container {
+      flex: 0.1;
+      border-radius: $border-radius-full;
+
+      &:hover {
+        background-color: $secondary-color;
+        color: $primary-color;
+      }
+    }
+
+    .search-icon {
+      @include padding(10px, 20px, 10px, 20px);
+      @extend %cursor-pointer
+    }
+
+
+  }
+}

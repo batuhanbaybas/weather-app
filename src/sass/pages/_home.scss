@@ -1,0 +1,13 @@
+@import '../utils/style';
+
+.container {
+  @include width(100%);
+  @include height(100vh);
+  background-color: $primary-color;
+
+  .wrapper {
+    @include width(60%);
+    @include height(100%);
+    @include placement(0, auto, 0, auto);
+  }
+}

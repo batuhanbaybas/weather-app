@@ -1,0 +1,26 @@
+@mixin flex($display , $align , $justify) {
+  display: $display;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin placement($top , $right , $bottom , $left) {
+  margin: $top $right $bottom $left;
+}
+
+@mixin padding($top , $right , $bottom , $left) {
+  padding: $top $right $bottom $left;
+}
+
+@mixin border($width , $style , $color) {
+  border: $width $style $color;
+}
+
+@mixin width($width) {
+  width: $width;
+}
+
+@mixin height($height) {
+  height: $height;
+}
+
